@@ -4,3 +4,11 @@ server:
 spring:
   application:
     name: 'ticket-express'
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bus-ticket
+    username: postgres
+    password: admin
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
