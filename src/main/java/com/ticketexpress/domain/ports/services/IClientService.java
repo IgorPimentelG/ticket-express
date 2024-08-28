@@ -1,14 +1,15 @@
 package com.ticketexpress.domain.ports.services;
 
-import com.ticketexpress.domain.Client;
-import org.springframework.data.domain.Page;
+import com.ticketexpress.domain.common.Page;
+import com.ticketexpress.domain.common.Pagination;
+import com.ticketexpress.domain.dtos.ClientDto;
 
 import java.util.UUID;
 
 public interface IClientService {
-	void create();
-	void update();
-	void delete();
-	Client find(UUID id);
-	Page<Client> list(int pageNumber, int pageSize);
+	void create(ClientDto resource);
+	void update(ClientDto resource);
+	void delete(UUID id);
+	ClientDto find(UUID id);
+	Page<ClientDto> list(Pagination pagination);
 }
