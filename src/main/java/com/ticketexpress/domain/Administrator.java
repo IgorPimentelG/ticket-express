@@ -1,16 +1,16 @@
 package com.ticketexpress.domain;
 
 import com.ticketexpress.domain.common.Validation;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.List;
 import java.util.UUID;
 
-@Getter
+@Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class Administrator implements Serializable {
 
 	@Serial
